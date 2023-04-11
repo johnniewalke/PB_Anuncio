@@ -1,14 +1,18 @@
 * {
     padding: 0px;
     margin: 0px;
-    font-family: 'Oswald', sans-serif;
+    font-family: FontePB, 'Oswald', sans-serif;
     font-size: 16px;
     color: #616161;
     font-weight: 200;
     color: white;
 }
 
+@font-face {
+    font-family: 'FontePB';
+    src: url('fonts/edo_sz/edosz.ttf');
+}
+
 body {
     background-color: black;
-    font
 }
