@@ -1,9 +1,10 @@
 * {
-    padding: 0px;
     margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; /*Alinhar borda a borda, tirando rolagem */
+    -webkit-font-smoothing: antialiased; /*fonte com alinhamento fino*/
+    -moz-osx-font-smoothing: grayscale;
     font-family: FontePB, 'Oswald', sans-serif;
-    font-size: 16px;
-    color: #616161;
     font-weight: 200;
     color: white;
 }
@@ -13,12 +14,75 @@
     src: url('fonts/edo_sz/edosz.ttf');
 }
 
-body {
-    background-color: black;
+.itensAnunciados h4,h5 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
 }
 
-.itemPosicao1 {
-    background-color: aliceblue;
-    background-size: 50px;
-    opacity: 0.3;
+.itensAnunciados h4 {
+    font-size: 16px;
+    font-weight: bold;
 }
+
+.topo {
+    font-size: 32px;
+    background-image:url(img/logopb.png), url(img/bannerpbedit.png);
+    background-repeat: no-repeat;
+    height: 325px;
+    background-position: left top, right top;
+    border: solid 5px gray;
+}
+.topo p {
+    margin: 150px 0px 0px 330px;
+    font-size: 58px;
+    border: solid 5px red;
+    width: 350px;
+    background-color: red;
+}
+
+body {
+    background-color: #0F0F10;
+
+}
+
+body .itensAnunciados {
+    display: flex;
+
+}
+
+.ultimosAnuncios p {
+    text-align: center;
+    font-size: 28px;
+}
+
+.ultimosAnuncios, .ultimosCarros {
+    border: solid 5px gray;
+    display: center;
+}
+
+.itensAnunciados {
+    height: 280px;
+    border: solid 1px white;
+    gap: 10px;
+    display: flex;
+    margin: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.itemPosicao1, .itemPosicao2, .itemPosicao3, .itemPosicao4 {
+    height: 245px;
+    width: 270px;
+    border: solid 1px yellow;
+    text-align: center;
+    padding: 5px;
+
+}
+
+/*.itemPosicao1 img {
+    height: 100px;
+    width: 100px;
+
+}*/
+
+
