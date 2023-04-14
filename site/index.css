@@ -16,3 +16,9 @@
 body {
     background-color: black;
 }
+
+.itemPosicao1 {
+    background-color: aliceblue;
+    background-size: 50px;
+    opacity: 0.3;
+}
