@@ -50,39 +50,61 @@ body .itensAnunciados {
 
 }
 
-.ultimosAnuncios p {
+.ultimosCarros, .ultimosAnuncios, .ultimosImoveis p {
     text-align: center;
     font-size: 28px;
 }
 
-.ultimosAnuncios, .ultimosCarros {
+.ultimosAnuncios, .ultimosCarros, .ultimosImoveis {
     border: solid 5px gray;
     display: center;
 }
 
 .itensAnunciados {
-    height: 280px;
-    border: solid 1px white;
-    gap: 10px;
-    display: flex;
-    margin: 5px;
-    align-items: center;
-    justify-content: center;
+  height: 350px;
+  /*border: solid 1px white;*/
+  gap: 10px;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(img/fundo.png);
 }
 
-.itemPosicao1, .itemPosicao2, .itemPosicao3, .itemPosicao4 {
-    height: 245px;
-    width: 270px;
-    border: solid 1px yellow;
-    text-align: center;
-    padding: 5px;
-
+.itemPosicao1,.itemPosicao2,.itemPosicao3,.itemPosicao4 {
+  height: 340px;
+  width: 285px;
+  /*border: solid 1px yellow;*/
+  text-align: center;
+  padding: 5px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  background-image: url(img/fundoEscuro.png);
+  border-radius: 5%;
 }
 
-/*.itemPosicao1 img {
-    height: 100px;
-    width: 100px;
+.itemPosicao1 img,.itemPosicao2 img,.itemPosicao3 img,.itemPosicao4 img {
+  max-width: 100%;
+  max-height: 100%;
+}
 
-}*/
+.itemPosicao1 h4,.itemPosicao1 h5,.itemPosicao2 h4,.itemPosicao2 h5,.itemPosicao3 h4,.itemPosicao3 h5,.itemPosicao4 h4,.itemPosicao4 h5 {
+  margin: 0;
+  text-align: center;
+}
 
-
+.maisItens {
+    text-align: right;
+    margin: 0px 15px 0px 0px;
+}
+.maisItens>a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    font-size: 14px;
+}
+.maisItens>a:hover {
+    text-decoration: underline;
+    font-size: 16px;
+}
